@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio | Miguel Quintero</title>
+  <meta name="description" content="Portafolio personal de Miguel Quintero, estudiante de Ingeniería de Sistemas y Computación." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d10;--panel:#111418;--muted:#9aa4b2;--text:#e6e9ef;--brand:#6ee7b7;--brand-2:#60a5fa;--radius:16px;--shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    body{margin:0;font-family:Inter,system-ui;background:#0a0c0f;color:var(--text)}
+    header{position:sticky;top:0;background:#111418d0;backdrop-filter:blur(8px);border-bottom:1px solid #1f242c;padding:10px 24px;display:flex;justify-content:space-between;align-items:center;z-index:50}
+    a{color:inherit;text-decoration:none}
+    nav a{margin-left:20px;color:var(--muted)}
+    nav a:hover{color:var(--brand)}
+    .container{max-width:1100px;margin:auto;padding:40px 20px}
+    h1,h2{color:#fff}
+    .hero{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+    .hero img{width:100%;border-radius:16px;object-fit:cover;border:2px solid #1f242c}
+    .badge{display:inline-block;background:#0e1318;border:1px solid #1f242c;border-radius:999px;padding:5px 10px;font-size:13px;margin:4px;color:var(--muted)}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+    .card{background:var(--panel);border-radius:var(--radius);padding:20px;border:1px solid #1f242c;box-shadow:var(--shadow)}
+    .card img{width:100%;border-radius:12px;margin-bottom:10px}
+    .muted{color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+    .gallery img{width:100%;border-radius:12px}
+    form{display:grid;gap:10px}
+    input,textarea{background:#0e1318;border:1px solid #273041;border-radius:10px;color:#fff;padding:10px}
+    button{background:linear-gradient(135deg,var(--brand),var(--brand-2));border:none;border-radius:10px;padding:10px 20px;color:#081018;font-weight:600;cursor:pointer}
+    footer{text-align:center;padding:20px;color:var(--muted)}
+    @media(max-width:800px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Miguel Quintero</h2>
+    <nav>
+      <a href="#about">Sobre mí</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about" class="hero">
+      <div>
+        <h1>¡Hola! Soy Miguel Quintero 👋</h1>
+        <p class="muted">Soy estudiante de <strong>Ingeniería de Sistemas y Computación</strong> en la Universidad EIA, actualmente cursando sexto semestre. Me apasiona la tecnología, el desarrollo web y crear soluciones innovadoras que faciliten la vida de las personas. Busco seguir creciendo profesionalmente, aplicando mis conocimientos en programación, diseño de software y análisis de datos para construir productos funcionales y escalables.</p>
+        <div>
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Python</span>
+          <span class="badge">SQL</span>
+        </div>
+      </div>
+      <img src="images/perfil.jpeg" alt="Foto profesional de Miguel Quintero">
+    </section>
+
+    <section id="projects">
+      <h2>Proyectos destacados</h2>
+      <div class="projects">
+        <div class="card">
+          <img src="images/Tako.png" alt="Captura del proyecto Tako">
+          <h3>Tako</h3>
+          <p class="muted">Tako es un aplicativo web que te ayuda a organizar, planear y cumplir con tus tareas. Su característica principal es su sistema de gamificación que te motiva a completar objetivos diarios mediante recompensas virtuales.</p>
+          <p><strong>Tecnologías:</strong> React, Node.js, MongoDB</p>
+          <p><strong>Rol:</strong> Full Stack Developer</p>
+        </div>
+        <div class="card">
+          <img src="images/SMIG.png" alt="Captura del proyecto SMIG">
+          <h3>SMIG</h3>
+          <p class="muted">SMIG es un aplicativo web en desarrollo que funciona como un <strong>geolocalizador para ganado</strong>. Informa no solo la ubicación del animal, sino también su estado de salud, vacunas, producción y datos clave, facilitando una gestión ganadera más eficiente y sostenible.</p>
+          <p><strong>Tecnologías:</strong> Django, PostgreSQL, API Maps</p>
+          <p><strong>Rol:</strong> Backend Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies e intereses</h2>
+      <p class="muted">Fuera de la programación, me gusta mantener un equilibrio entre lo académico y lo personal. Estos son algunos de mis pasatiempos que me ayudan a relajarme, conectar con otros y mantener la creatividad activa.</p>
+      <div class="gallery">
+        <img src="images/futbol.jpeg" alt="Jugando fútbol">
+        <img src="images/ver_futbol.jpeg" alt="Viendo fútbol en casa">
+        <img src="images/amigos.jpeg" alt="Compartiendo con amigos">
+        <img src="images/videojuegos.jpeg" alt="Jugando videojuegos">
+      </div>
+      <ul>
+        <li><strong>Jugar fútbol:</strong> me ayuda a liberar estrés y mantenerme activo.</li>
+        <li><strong>Ver fútbol:</strong> disfruto analizar tácticas y aprender del juego.</li>
+        <li><strong>Jugar videojuegos:</strong> potencia mi creatividad y trabajo en equipo.</li>
+        <li><strong>Compartir con mis amigos y mi novia:</strong> me recarga de energía y bienestar.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <p class="muted">Si deseas contactarme para colaboraciones, proyectos o simplemente conversar sobre tecnología, puedes escribirme a:</p>
+      <ul>
+        <li>📧 <a href="mailto:miguelpancha2805@gmail.com">miguelpancha2805@gmail.com</a></li>
+        <li>🐙 <a href="https://github.com/panxxa10" target="_blank">github.com/panxxa10</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Miguel Quintero — Todos los derechos reservados
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
